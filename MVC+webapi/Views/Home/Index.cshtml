@@ -1,0 +1,18 @@
+﻿@model IEnumerable<MVC_webapi.Models.Entities.Birds>
+
+<h1>Все птицы</h1>
+
+<table>
+    <tr>
+        <th>Название</th>
+        <th>Описание</th>
+    </tr>
+
+@foreach (var b in Model)
+{
+    <tr>
+        <td>@b.Name</td>
+        <td>@b.Description</td>
+    </tr>
+}
+</table>
